@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i;
+    cout<<"Masukkan jumlah hari setelah hari senin : ";
+    cin>>i;
+    {
+        if (i%7==6)
+        cout<<"Setelah "<<i<<" hari, maka hari ini adalah hari Minggu.";
+        else if (i%7==1)
+        cout<<"Setelah "<<i<<" hari, maka hari ini adalah hari Selasa.";
+        else if (i*7==2)
+        cout<<"Setelah "<<i<<" hari, maka hari ini adalah hari Rabu.";
+        else if (i%7==3)
+        cout<<"Setelah "<<i<<" hari, maka hari ini adalah hari Kamis.";
+        else if (i%7==4)
+        cout<<"Setelah "<<i<<" hari, maka hari ini adalah hari Jumat.";
+        else if (i%7==5)
+        cout<<"Setelah "<<i<<" hari, maka hari ini adalah hari Sabtu.";
+        else if (i%7==0)
+        cout<<"Setelah "<<i<<" hari, maka hari ini adalah hari Senin.";
+    }
+
+    return 0;
+}
